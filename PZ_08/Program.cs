@@ -67,6 +67,47 @@
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine(); 
+             
+            for (int i = 0; i < arr.Length; i++) // Реверс каждой строки массива 
+            { 
+                Array.Reverse(arr[i]);  
+            } 
+ 
+             
+            for (int i = 0; i < arr.Length; i++) // Вывод массива после реверса 
+            { 
+                for (int j = 0; j < arr[i].Length; j++) 
+                { 
+                    Console.Write(arr[i][j] + " ");  
+                } 
+                Console.WriteLine(); 
+            } 
+ 
+            Console.WriteLine(); 
+            Console.WriteLine("Задание 7"); 
+ 
+            int[] symbolCount = new int[arr.Length]; // Создаем массив symbolCount длины arr.Length для хранения количества символов в каждом элементе arr 
+ 
+            for (int i = 0; i < arr.Length; i++) 
+            { 
+                symbolCount[i] = 0; 
+                for (int j = 0; j < arr[i].Length; j++) 
+                { 
+                    symbolCount[i] += arr[i][j].Length; 
+                } 
+            } 
+ 
+            for (int i = 0; i < arr.Length; i++) // Выводим каждый элемент arr, его элементы и количество символов в нем 
+            { 
+                for (int j = 0; j < arr[i].Length; j++) // Выводим каждый элемент внутреннего массива arr[i] с пробелом после него 
+                { 
+                    Console.Write(arr[i][j] + " "); 
+                } 
+                Console.Write("Количество символов: " + symbolCount[i]); 
+                Console.WriteLine;
+            }
+        
         }
     }
 }
