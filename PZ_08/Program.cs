@@ -51,6 +51,22 @@
             }
             Console.WriteLine();
             Console.WriteLine(" задание 5 ");
+            for (int i = 0; i < arr.Length; i++)
+            {
+                string b = arr[i][0];
+                string c = arr[i].Max();
+                int n = Array.IndexOf(arr[i], c);
+                arr[i][0] = c;
+                arr[i][n] = b;
+            }
+            for (int i = 0; i < arr.Length; i++)
+            {
+               for (int j = 0; j < arr[i].Length; j++)
+                {
+                    Console.Write(arr[i][j] + " ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
