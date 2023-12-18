@@ -32,9 +32,7 @@ namespace PZ_16
         static byte enemyStrong = 5;
         static int enemyHP = 30;
 
-        static int bossHP = 500;
-        static int bossStrong = 20;
-        static bool isBoss;
+     
 
         static int buffCount;
 
@@ -68,16 +66,6 @@ namespace PZ_16
             //временные координаты для проверки занятости ячейки
             int x;
             int y;
-
-            if (isBoss)
-            {
-                x = random.Next(0, mapSize - 5);
-                y = random.Next(0, mapSize - 5);
-                map[x, y] = 'O';
-                map[x, y + 1] = '-';
-                map[x, y + 2] = 'O';
-            }
-
             //добавление врагов
             while (enemies > 0)
             {
@@ -178,14 +166,10 @@ namespace PZ_16
                             playerX = mapSize - 1;
                             playerStepCount--;
                         }
-                        break;
-                    case ConsoleKey.B:
-                        BossSpawn();
-                        break;
+                        break;                   
                     case ConsoleKey.Escape:
                         GameMenu();
                         break;
-
                 }
 
                 if (playerStepCount - buffCount == 20)
@@ -222,6 +206,10 @@ namespace PZ_16
                 {
                     isAlive = false;
                     GameOver();
+                }
+                if(enemiesCount <= 0)
+                {              
+                    Winning();
                 }
 
 
@@ -539,15 +527,6 @@ namespace PZ_16
             {
                 Console.WriteLine("Файл сохранения не найден.");
             }
-        }
-
-        static void BossSpawn()
-        {
-            isBoss = true;
-            RemoveMap();
-            GenerationMap();
-            Move();
-            isBoss = false;
-        }
+        }    
     }
 }
