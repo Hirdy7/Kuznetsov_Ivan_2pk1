@@ -318,11 +318,24 @@ namespace PZ_16
         {
             while (playerHP > 0 && enemyHP > 0)
             {
+                for (int i = 0; i < 3; i++) // Перебор символов анимации
+                {
+                    Console.SetCursorPosition(playerX, playerY);
+                    Console.Write('*'); 
+                    Thread.Sleep(60);
+                    Console.SetCursorPosition(playerX, playerY);
+                    Console.Write(' ');
+                    Thread.Sleep(60);
+                    Console.SetCursorPosition(playerX, playerY);
+                    Console.Write('*');
+                    Thread.Sleep(60);
+                }
                 playerHP -= enemyStrong;
-                enemyHP -= (playerStrong);
+                enemyHP -= playerStrong;
 
                 Console.SetCursorPosition(0, 30);
                 Console.Write($"Здоровье игрока: {playerHP}  ");
+                //Console.Write('_');
             }
             enemiesCount--;
             enemyHP = 30;
