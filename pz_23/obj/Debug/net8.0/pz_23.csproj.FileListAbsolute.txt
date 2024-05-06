@@ -1,0 +1,14 @@
+C:\Users\zabiv\source\repos\pz_23\bin\Debug\net8.0\pz_23.exe
+C:\Users\zabiv\source\repos\pz_23\bin\Debug\net8.0\pz_23.deps.json
+C:\Users\zabiv\source\repos\pz_23\bin\Debug\net8.0\pz_23.runtimeconfig.json
+C:\Users\zabiv\source\repos\pz_23\bin\Debug\net8.0\pz_23.dll
+C:\Users\zabiv\source\repos\pz_23\bin\Debug\net8.0\pz_23.pdb
+C:\Users\zabiv\source\repos\pz_23\obj\Debug\net8.0\pz_23.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zabiv\source\repos\pz_23\obj\Debug\net8.0\pz_23.AssemblyInfoInputs.cache
+C:\Users\zabiv\source\repos\pz_23\obj\Debug\net8.0\pz_23.AssemblyInfo.cs
+C:\Users\zabiv\source\repos\pz_23\obj\Debug\net8.0\pz_23.csproj.CoreCompileInputs.cache
+C:\Users\zabiv\source\repos\pz_23\obj\Debug\net8.0\pz_23.dll
+C:\Users\zabiv\source\repos\pz_23\obj\Debug\net8.0\refint\pz_23.dll
+C:\Users\zabiv\source\repos\pz_23\obj\Debug\net8.0\pz_23.pdb
+C:\Users\zabiv\source\repos\pz_23\obj\Debug\net8.0\pz_23.genruntimeconfig.cache
+C:\Users\zabiv\source\repos\pz_23\obj\Debug\net8.0\ref\pz_23.dll
